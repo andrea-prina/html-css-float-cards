@@ -1,4 +1,4 @@
-/* Formatting reset & clearfix */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&display=swap');/* Formatting reset & clearfix */
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +13,27 @@
 
 }
 
+body {
+
+    text-align: center;
+    font-family: 'Baloo 2', Arial;
+}
+
+/* Title and description */
+
+h1 {
+    color: #E53271;
+    font-size: 800;
+    margin: 10px;
+}
+
+header p {
+    
+    line-height: 17px;
+    margin: 20px;
+}
+
+/* Team member cards */
 .card {
 
     background-color: darkblue;

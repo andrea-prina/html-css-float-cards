@@ -1,29 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&display=swap');/* Formatting reset & clearfix */
+
+/* General Formatting */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.clearfix::after {
-
+.clearfix::after{
     content: "";
     display: table;
     clear: both;
-
 }
+
+
 
 body {
 
     text-align: center;
     font-family: 'Baloo 2', Arial;
+    width: 80%;
+    margin: 0 auto;
 }
+
+main{
+
+    padding: 20px;
+}
+
 
 /* Title and description */
 
 h1 {
     color: #E53271;
-    font-size: 800;
     margin: 10px;
 }
 
@@ -34,11 +44,67 @@ header p {
 }
 
 /* Team member cards */
+
 .card {
 
-    background-color: darkblue;
+    background-color: black;
+    color: white;
+    text-align: left;
     float: left;
-    height: 40px;
+    height: 100px;
     width: calc(100% / 3 - 20px);
-    margin: 5px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px 3px #D9D9D8
+
+}
+
+.image{
+
+    float: left;
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.card a{
+
+    text-decoration: none;
+    color: #3CC1DD;
+}
+
+.name, .role, .email {
+    margin-top: 5px;
+}
+
+.name{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/* Profile Pictures */
+
+#male1{
+    background-image: url(../img/male1.png);
+}
+
+#male2{
+    background-image: url(../img/male2.png);
+}
+
+#male3{
+    background-image: url(../img/male3.png);
+}
+
+#female1{
+    background-image: url(../img/female1.png);
+}
+
+#female2{
+    background-image: url(../img/female2.png);
+}
+
+#female3{
+    background-image: url(../img/female3.png);
 }
